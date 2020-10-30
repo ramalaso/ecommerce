@@ -1,21 +1,21 @@
 <ul style="display: flex; justify-content: space-between;">
     <% products.forEach(product => { %>
-    <div class="cloumn is-one-quarter">
+    <div class="column is-one-quarter">
         <div class="card">
             <div class="card-image">
                 <figure class="image" style="height: 190px; width: 300px;">
                     <img src="<%- product.image %> " alt="<%- product.name %>" style="height: 100%; object-fit: cover;">
                 </figure>
             </div>
-        </div>
-        <div class="card-content">
-            <h1 class="title"><%- product.name %> </h1>
-            <div class="button is-fullwidth is-primary">
-                <span class="icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
-                <span>Add to cart: </span>
-                <strong><%= product.price %> USD </strong>
+            <div class="card-content">
+                <h1 class="title"><%- product.name %> </h1>
+                <div class="button is-fullwidth is-danger">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span>Add to cart: </span>
+                    <strong><%= product.price %> USD </strong>
+                </div>
             </div>
         </div>
     </div>

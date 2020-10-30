@@ -7,15 +7,17 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6fa1444cbf.js"></script>
 </head>
 
-<body style="display: flex; min-height: 100vh; flex-direction: column;">
-    <div class="wrapper">
-        <%- include('../partials/header.ejs') %>
-        <main><%- body %></main>
-        <%- include('../partials/footer.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class="container" style="flex: 1; padding: 50px 0;">
+        <div class="column is-multiline">
+            <main><%- body %></main>
+        </div>
     </div>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>
